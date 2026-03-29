@@ -88,13 +88,13 @@ export function SiteNavigation() {
     <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/85">
       <div className="mx-auto flex h-20 w-full max-w-300 items-center justify-between gap-4 px-4 lg:px-6">
         <Link href="/" className="flex min-w-0 items-center gap-3">
-          <div className="shrink-0">
+          <div className="shrink-0 h-12 flex items-center">
             <Image
               src="/logo.png"
               alt="Feat In Technology"
               width={100}
               height={50}
-              style={{ width: 'auto' }}
+              style={{ width: 'auto', height: 'auto' }}
               priority
             />
           </div>
