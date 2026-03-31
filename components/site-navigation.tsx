@@ -90,7 +90,7 @@ export function SiteNavigation() {
         <Link href="/" className="flex min-w-0 items-center gap-3">
           <div className="shrink-0 h-12 max-h-12 overflow-hidden flex items-center">
             <Image
-              src="/logo.png"
+              src="/logo.webp"
               alt="Feat In Technology"
               className="h-12 w-auto max-w-full object-contain"
               width={180}

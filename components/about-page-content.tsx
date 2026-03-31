@@ -18,7 +18,7 @@ export function AboutPageContent() {
             </div>
             <div className="flex justify-center lg:justify-end">
               <img 
-                src="/logo.png" 
+                src="/logo.webp" 
                 alt="HK Feat In Technology Logo" 
                 className="w-full max-w-[400px] h-auto object-contain"
               />

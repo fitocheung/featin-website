@@ -4,8 +4,8 @@ export default function JsonLd() {
     "@type": "Organization",
     name: "HK Feat In Technology",
     alternateName: "飛英科技",
-    url: "https://hkfeatin.com",
-    logo: "https://hkfeatin.com/logo.png",
+    url: "https://www.852featin.com",
+    logo: "https://www.852featin.com/logo.webp",
     description:
       "Hong Kong-based surgical instruments supplier specializing in ophthalmic, hair transplant, ENT, and plastic surgery instruments with over 20 years of experience.",
     foundingDate: "2000",
@@ -25,10 +25,10 @@ export default function JsonLd() {
   const localBusinessJsonLd = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "@id": "https://hkfeatin.com",
+    "@id": "https://www.852featin.com",
     name: "HK Feat In Technology",
-    image: "https://hkfeatin.com/logo.png",
-    url: "https://hkfeatin.com",
+    image: "https://www.852featin.com/logo.webp",
+    url: "https://www.852featin.com",
     telephone: "+85253469889",
     address: {
       "@type": "PostalAddress",
@@ -53,10 +53,10 @@ export default function JsonLd() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "HK Feat In Technology",
-    url: "https://hkfeatin.com",
+    url: "https://www.852featin.com",
     potentialAction: {
       "@type": "SearchAction",
-      target: "https://hkfeatin.com/search?q={search_term_string}",
+      target: "https://www.852featin.com/search?q={search_term_string}",
       "query-input": "required name=search_term_string",
     },
   }
