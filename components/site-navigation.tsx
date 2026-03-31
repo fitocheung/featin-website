@@ -37,19 +37,19 @@ import {
 const pdfCatalogues = [
   {
     key: "pdfOphthalmic" as const,
-    href: "https://www.852featin.com/new/wp-content/uploads/2026/03/HK-Feat-In-Tech-Ophthalmic-Instruments-Catalogue-.pdf",
+    href: "/catalogues/HK Feat In Tech Ophthalmic Instruments Catalogue .pdf",
   },
   {
     key: "pdfHair" as const,
-    href: "https://www.852featin.com/new/wp-content/uploads/2026/03/HK-Feat-In-Tech-Hair-Transplant-Instruments-Catalogue.pdf",
+    href: "/catalogues/HK Feat In Tech Hair Transplant Instruments Catalogue.pdf",
   },
   {
     key: "pdfPlastic" as const,
-    href: "https://www.852featin.com/new/wp-content/uploads/2026/03/HK-Feat-In-Tech-Plastic-Surgery-Catalogue-.pdf",
+    href: "/catalogues/HK Feat In Tech Plastic Surgery Catalogue .pdf",
   },
   {
     key: "pdfSurgical" as const,
-    href: "https://www.852featin.com/new/wp-content/uploads/2026/03/HK-Feat-In-Tech-Surgical-Instruments-Catalogue-.pdf",
+    href: "/catalogues/HK Feat In Tech Surgical Instruments Catalogue .pdf",
   },
 ]
 
