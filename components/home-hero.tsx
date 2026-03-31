@@ -47,6 +47,10 @@ const heroBackgroundCards = [
     src: "/hero/surgical.jpg",
     label: "Plastic Surgery",
   },
+  {
+    src: "/hero/new-slide.jpg",
+    label: "New Slide",
+  },
 ]
 
 export function HomeHero() {
