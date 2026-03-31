@@ -36,20 +36,20 @@ const socialLinks = [
 
 const heroBackgroundCards = [
   {
-    src: "/hero/ophthalmic.webp",
+    src: "/hero/ophthalmic-surgical-instrument.webp",
     label: "Ophthalmic",
   },
   {
-    src: "/hero/tool.webp",
+    src: "/hero/hair-transplant-instrument.webp",
     label: "Hair Transplant",
   },
   {
-    src: "/hero/surgical.webp",
+    src: "/hero/plastic-surgery-instrument.webp",
     label: "Plastic Surgery",
   },
   {
-    src: "/hero/new-slide.webp",
-    label: "New Slide",
+    src: "/hero/hk-featin-hero-banner.webp",
+    label: "HK Feat In",
   },
 ]
 

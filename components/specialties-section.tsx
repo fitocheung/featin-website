@@ -11,15 +11,15 @@ const specialtiesIcons = [Eye, Scissors, Sparkles]
 
 const specialtiesImages = [
   {
-    src: "/hero/ophthalmic-card.webp",
-    alt: "Ophthalmic Instruments",
+    src: "/hero/ophthalmic-instrument-card.webp",
+    alt: "Ophthalmic Surgical Instruments",
   },
   {
-    src: "/hero/hair-card.webp",
-    alt: "Hair Transplant Tools",
+    src: "/hero/hair-transplant-tool-card.webp",
+    alt: "Hair Transplant Surgical Tools",
   },
   {
-    src: "/hero/plastic-card.webp",
+    src: "/hero/plastic-surgery-card.webp",
     alt: "Plastic Surgery Equipment",
   },
 ]
