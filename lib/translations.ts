@@ -155,7 +155,7 @@ export const translations = {
       },
       {
         q: "What payment methods do you accept?",
-        a: "We accept bank transfer as our primary payment method. Please contact us for bank details.",
+        a: "We accept bank transfer and cheque as our payment methods. Please contact us for bank details.",
       },
     ],
 
@@ -348,7 +348,7 @@ export const translations = {
       },
       {
         q: "你們接受哪些付款方式？",
-        a: "我們接受銀行轉帳作為主要付款方式。請與我們聯繫以獲取銀行資料。",
+        a: "我們接受銀行轉帳及支票作為付款方式。請與我們聯繫以獲取銀行資料。",
       },
     ],
 
