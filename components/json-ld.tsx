@@ -108,6 +108,112 @@ export default function JsonLd() {
     ],
   }
 
+  const productJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Surgical Instruments by HK Feat In Technology",
+    description: "High-quality surgical instruments including ophthalmic, hair transplant, and plastic surgery instruments.",
+    numberOfItems: 4,
+    itemListElement: [
+      {
+        "@type": "Product",
+        position: 1,
+        name: "Ophthalmic Surgical Instruments",
+        description: "Precision tools designed for delicate ophthalmic procedures including cataract, LASIK, retinal, and general eye surgery.",
+        brand: {
+          "@type": "Brand",
+          name: "HK Feat In Technology",
+        },
+        manufacturer: {
+          "@type": "Organization",
+          name: "HK Feat In Technology",
+          url: "https://www.852featin.com",
+        },
+        offers: {
+          "@type": "Offer",
+          priceCurrency: "USD",
+          availability: "https://schema.org/InStock",
+          seller: {
+            "@type": "Organization",
+            name: "HK Feat In Technology",
+          },
+        },
+      },
+      {
+        "@type": "Product",
+        position: 2,
+        name: "Hair Transplant Instruments",
+        description: "Specialized FUE and FUT hair transplant tools including punches, forceps, implanters, and graft storage solutions.",
+        brand: {
+          "@type": "Brand",
+          name: "HK Feat In Technology",
+        },
+        manufacturer: {
+          "@type": "Organization",
+          name: "HK Feat In Technology",
+          url: "https://www.852featin.com",
+        },
+        offers: {
+          "@type": "Offer",
+          priceCurrency: "USD",
+          availability: "https://schema.org/InStock",
+          seller: {
+            "@type": "Organization",
+            name: "HK Feat In Technology",
+          },
+        },
+      },
+      {
+        "@type": "Product",
+        position: 3,
+        name: "Plastic Surgery Instruments",
+        description: "Professional plastic and reconstructive surgery instruments for facial, body contouring, and aesthetic procedures.",
+        brand: {
+          "@type": "Brand",
+          name: "HK Feat In Technology",
+        },
+        manufacturer: {
+          "@type": "Organization",
+          name: "HK Feat In Technology",
+          url: "https://www.852featin.com",
+        },
+        offers: {
+          "@type": "Offer",
+          priceCurrency: "USD",
+          availability: "https://schema.org/InStock",
+          seller: {
+            "@type": "Organization",
+            name: "HK Feat In Technology",
+          },
+        },
+      },
+      {
+        "@type": "Product",
+        position: 4,
+        name: "Surgical Instruments Catalogue",
+        description: "Complete product catalogues with detailed specifications and ordering information for all surgical instrument categories.",
+        brand: {
+          "@type": "Brand",
+          name: "HK Feat In Technology",
+        },
+        manufacturer: {
+          "@type": "Organization",
+          name: "HK Feat In Technology",
+          url: "https://www.852featin.com",
+        },
+        offers: {
+          "@type": "Offer",
+          priceCurrency: "USD",
+          availability: "https://schema.org/InStock",
+          seller: {
+            "@type": "Organization",
+            name: "HK Feat In Technology",
+          },
+        },
+      },
+    ],
+  }
+
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -175,6 +281,12 @@ export default function JsonLd() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(faqJsonLd),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(productJsonLd),
         }}
       />
       <script

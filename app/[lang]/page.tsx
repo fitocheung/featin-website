@@ -37,7 +37,7 @@ export async function generateMetadata({
       title: lang === "zh" 
         ? "香港飛英科技 | 手術器械供應商"
         : "HK Feat In Technology | Surgical Instruments Supplier",
-      images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+      images: [{ url: "/og-image.svg", width: 1200, height: 630 }],
     },
   }
 }

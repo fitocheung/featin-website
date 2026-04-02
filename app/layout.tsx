@@ -23,18 +23,18 @@ export const metadata: Metadata = {
     template: "%s | HK Feat In Technology",
   },
   description: "HK Feat In Technology supplies high-quality surgical instruments including ophthalmic, hair transplant, ENT, and plastic surgery instruments. Established in Hong Kong with over 20 years of experience.",
-  openGraph: {
-    type: "website",
-    locale: "en_HK",
-    alternateLocale: ["zh-Hant"],
-    url: "https://www.852featin.com",
-    siteName: "HK Feat In Technology",
-    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
-  },
-  twitter: {
-    card: "summary_large_image",
-    images: ["/og-image.png"],
-  },
+    openGraph: {
+      type: "website",
+      locale: "en_HK",
+      alternateLocale: ["zh-Hant"],
+      url: "https://www.852featin.com",
+      siteName: "HK Feat In Technology",
+      images: [{ url: "/og-image.svg", width: 1200, height: 630 }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      images: ["/og-image.svg"],
+    },
   robots: {
     index: true,
     follow: true,
