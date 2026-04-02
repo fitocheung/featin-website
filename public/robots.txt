@@ -8,6 +8,10 @@ Sitemap: https://www.852featin.com/sitemap.xml
 # Crawl-delay (optional)
 Crawl-delay: 1
 
+# Disallow all URLs with query parameters to prevent duplicate content indexing
+# This blocks tracking parameters (CDN, analytics, etc.) that create duplicate pages
+Disallow: /*?
+
 # Disallow unnecessary paths
 Disallow: /api/
 Disallow: /_next/
