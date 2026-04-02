@@ -32,12 +32,9 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Copy public folder contents to .next
-        run: cp -r public/* .next/
-
       - name: Deploy to Cloudflare Pages
         run: |
-          npx wrangler pages deploy .next \
+          npx wrangler pages deploy out \
             --project-name=featin-website-cloudflare \
             --commit-dirty=true
         env:
