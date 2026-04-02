@@ -40,7 +40,7 @@ const heroBackgroundCards = [
     label: "Ophthalmic",
   },
   {
-    src: "/hero/hair-transplant-instrument.webp",
+    src: "/hero/hair-transplant-cover.webp",
     label: "Hair Transplant",
   },
   {
