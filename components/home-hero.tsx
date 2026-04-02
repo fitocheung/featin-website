@@ -74,7 +74,7 @@ export function HomeHero() {
         {heroBackgroundCards.map((item, i) => (
           <div
             key={item.src}
-            className="absolute inset-0 transition-opacity duration-[2000ms] ease-in-out"
+            className="absolute inset-0 h-full w-full transition-opacity duration-[2000ms] ease-in-out"
             style={{ opacity: i === currentSlide ? 1 : 0 }}
           >
             <Image
