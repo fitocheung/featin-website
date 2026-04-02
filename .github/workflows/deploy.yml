@@ -34,7 +34,7 @@ jobs:
 
       - name: Deploy to Cloudflare Pages
         run: |
-          npx wrangler pages deploy out \
+          npx wrangler pages deploy .next \
             --project-name=featin-website-cloudflare \
             --commit-dirty=true
         env:
