@@ -3,9 +3,11 @@ import { HomeHero } from "@/components/home-hero"
 import { SpecialtiesSection } from "@/components/specialties-section"
 import { WhyChooseFit } from "@/components/why-choose-fit"
 import { ContactCta } from "@/components/contact-cta"
-import { baseUrl } from "@/lib/i18n-config"
+import { baseUrl, languages } from "@/lib/i18n-config"
 
-export const dynamic = "force-dynamic"
+export function generateStaticParams() {
+  return languages.map((lang) => ({ lang }))
+}
 
 export async function generateMetadata({
   params,

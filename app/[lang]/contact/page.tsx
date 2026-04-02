@@ -1,7 +1,10 @@
 import type { Metadata } from "next"
 import { ContactPageContent } from "@/components/contact-page-content"
+import { languages } from "@/lib/i18n-config"
 
-export const dynamic = "force-dynamic"
+export function generateStaticParams() {
+  return languages.map((lang) => ({ lang }))
+}
 
 export async function generateMetadata({
   params,

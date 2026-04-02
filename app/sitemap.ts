@@ -1,6 +1,8 @@
 import { MetadataRoute } from "next"
 import { baseUrl, languages } from "@/lib/i18n-config"
 
+export const dynamic = "force-static"
+
 const routes = [
   { path: "", priority: 1.0, changefreq: "weekly" },
   { path: "products", priority: 0.9, changefreq: "weekly" },

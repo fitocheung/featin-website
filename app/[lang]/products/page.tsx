@@ -1,8 +1,10 @@
 import type { Metadata } from "next"
 import { ProductsPageContent } from "@/components/products-page-content"
-import { baseUrl } from "@/lib/i18n-config"
+import { baseUrl, languages } from "@/lib/i18n-config"
 
-export const dynamic = "force-dynamic"
+export function generateStaticParams() {
+  return languages.map((lang) => ({ lang }))
+}
 
 export async function generateMetadata({
   params,
