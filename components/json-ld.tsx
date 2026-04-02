@@ -61,6 +61,96 @@ export default function JsonLd() {
     },
   }
 
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What types of surgical instruments do you supply?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "We supply a wide range of surgical instruments including ophthalmic instruments, hair transplant tools, ENT instruments, and plastic surgery instruments. All instruments are manufactured to meet international quality standards.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do you offer international shipping?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes, we offer worldwide shipping to surgeons and medical institutions globally. Contact us for shipping quotes and delivery timelines.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I request a product catalogue?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes, you can download our PDF catalogues from our website or contact us directly to request physical copies. We have catalogues for ophthalmic, hair transplant, plastic surgery, and general surgical instruments.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do you provide after-sales support?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes, we provide comprehensive after-sales support including product consultation, repair services, and customization options for your surgical instruments.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What is your minimum order quantity?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "We accommodate orders of all sizes, from individual instruments to bulk orders. Contact us to discuss your specific requirements and we will find a solution that works for you.",
+        },
+      },
+    ],
+  }
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://www.852featin.com",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Products",
+        item: "https://www.852featin.com/products",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Services",
+        item: "https://www.852featin.com/services",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "About Us",
+        item: "https://www.852featin.com/about-us",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Contact",
+        item: "https://www.852featin.com/contact",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "PDF Catalogues",
+        item: "https://www.852featin.com/pdf-catalogue",
+      },
+    ],
+  }
+
   return (
     <>
       <script
@@ -79,6 +169,18 @@ export default function JsonLd() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(websiteJsonLd),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqJsonLd),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbJsonLd),
         }}
       />
     </>
