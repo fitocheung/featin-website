@@ -1,14 +1,11 @@
 import type { Metadata } from "next"
-import { SitePageShell } from "@/components/site-page-shell"
 import { HomeHero } from "@/components/home-hero"
 import { SpecialtiesSection } from "@/components/specialties-section"
 import { WhyChooseFit } from "@/components/why-choose-fit"
 import { ContactCta } from "@/components/contact-cta"
-import { languages, baseUrl } from "@/lib/i18n-config"
+import { baseUrl } from "@/lib/i18n-config"
 
-export function generateStaticParams() {
-  return languages.map((lang) => ({ lang }))
-}
+export const dynamic = "force-dynamic"
 
 export async function generateMetadata({
   params,
@@ -51,11 +48,11 @@ export default async function HomePage({
   params: Promise<{ lang: string }>
 }) {
   return (
-    <SitePageShell>
+    <>
       <HomeHero />
       <SpecialtiesSection />
       <WhyChooseFit />
       <ContactCta />
-    </SitePageShell>
+    </>
   )
 }

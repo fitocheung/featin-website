@@ -1,11 +1,7 @@
 import type { Metadata } from "next"
 import { PdfCatalogueSection } from "@/components/pdf-catalogue"
-import { SitePageShell } from "@/components/site-page-shell"
-import { languages } from "@/lib/i18n-config"
 
-export function generateStaticParams() {
-  return languages.map((lang) => ({ lang }))
-}
+export const dynamic = "force-dynamic"
 
 export async function generateMetadata({
   params,
@@ -36,9 +32,5 @@ export default async function PdfCataloguePage({
 }: {
   params: Promise<{ lang: string }>
 }) {
-  return (
-    <SitePageShell>
-      <PdfCatalogueSection />
-    </SitePageShell>
-  )
+  return <PdfCatalogueSection />
 }

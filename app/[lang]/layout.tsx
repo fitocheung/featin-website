@@ -1,47 +1,18 @@
-import type { Metadata } from "next"
-import { notFound } from "next/navigation"
-import { languages, type Language } from "@/lib/i18n-config"
+"use client"
 
-export function generateStaticParams() {
-  return languages.map((lang) => ({ lang }))
-}
+import { LanguageProvider } from "@/lib/language-context"
+import { SiteNavigation } from "@/components/site-navigation"
+import { SiteFooter } from "@/components/site-footer"
+import { type ReactNode } from "react"
 
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ lang: string }>
-}): Promise<Metadata> {
-  const { lang } = await params
-  if (!languages.includes(lang as Language)) {
-    return {}
-  }
-
-  const baseUrl = "https://www.852featin.com"
-  
-  return {
-    metadataBase: new URL(baseUrl),
-    alternates: {
-      canonical: `/${lang}`,
-      languages: {
-        en: "/en",
-        "zh-Hant": "/zh",
-      },
-    },
-  }
-}
-
-export default async function LangLayout({
-  children,
-  params,
-}: {
-  children: React.ReactNode
-  params: Promise<{ lang: string }>
-}) {
-  const { lang } = await params
-  
-  if (!languages.includes(lang as Language)) {
-    notFound()
-  }
-
-  return <>{children}</>
+export default function LangLayout({ children }: { children: ReactNode }) {
+  return (
+    <LanguageProvider>
+      <div className="min-h-screen bg-white text-slate-900 flex flex-col">
+        <SiteNavigation />
+        <main className="flex-1">{children}</main>
+        <SiteFooter />
+      </div>
+    </LanguageProvider>
+  )
 }

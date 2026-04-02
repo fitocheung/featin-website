@@ -1,11 +1,8 @@
 import type { Metadata } from "next"
 import { AboutPageContent } from "@/components/about-page-content"
-import { SitePageShell } from "@/components/site-page-shell"
-import { languages } from "@/lib/i18n-config"
+import { baseUrl } from "@/lib/i18n-config"
 
-export function generateStaticParams() {
-  return languages.map((lang) => ({ lang }))
-}
+export const dynamic = "force-dynamic"
 
 export async function generateMetadata({
   params,
@@ -36,9 +33,5 @@ export default async function AboutUsPage({
 }: {
   params: Promise<{ lang: string }>
 }) {
-  return (
-    <SitePageShell>
-      <AboutPageContent />
-    </SitePageShell>
-  )
+  return <AboutPageContent />
 }

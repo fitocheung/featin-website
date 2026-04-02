@@ -1,11 +1,8 @@
 import type { Metadata } from "next"
 import { ProductsPageContent } from "@/components/products-page-content"
-import { SitePageShell } from "@/components/site-page-shell"
-import { languages, baseUrl } from "@/lib/i18n-config"
+import { baseUrl } from "@/lib/i18n-config"
 
-export function generateStaticParams() {
-  return languages.map((lang) => ({ lang }))
-}
+export const dynamic = "force-dynamic"
 
 export async function generateMetadata({
   params,
@@ -28,13 +25,6 @@ export async function generateMetadata({
         "zh-Hant": "/zh/products",
       },
     },
-    openGraph: {
-      title: lang === "zh" ? "產品 | 飛英科技" : "Products | FIT Surgical Instruments",
-      url: `${baseUrl}/${lang}/products`,
-      siteName: "FIT 飛英科技",
-      locale: lang === "zh" ? "zh_HK" : "en_US",
-      type: "website",
-    },
   }
 }
 
@@ -43,9 +33,5 @@ export default async function ProductsPage({
 }: {
   params: Promise<{ lang: string }>
 }) {
-  return (
-    <SitePageShell>
-      <ProductsPageContent />
-    </SitePageShell>
-  )
+  return <ProductsPageContent />
 }
