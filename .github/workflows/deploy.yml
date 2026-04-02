@@ -32,8 +32,8 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Copy public folder to .next
-        run: cp -r public .next/
+      - name: Copy public folder contents to .next
+        run: cp -r public/* .next/
 
       - name: Deploy to Cloudflare Pages
         run: |
