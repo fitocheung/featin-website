@@ -2,8 +2,6 @@
 
 import { useState, useEffect, useCallback } from "react"
 
-
-import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight, Eye, Scissors, Sparkles } from "lucide-react"
 
@@ -77,12 +75,10 @@ export function HomeHero() {
             className="absolute inset-0 h-full w-full transition-opacity duration-[2000ms] ease-in-out"
             style={{ opacity: i === currentSlide ? 1 : 0 }}
           >
-            <Image
+            <img
               src={item.src}
               alt={item.label}
-              fill
-              priority={i === 0}
-              className="object-cover object-center"
+              className="h-full w-full object-cover"
             />
           </div>
         ))}
